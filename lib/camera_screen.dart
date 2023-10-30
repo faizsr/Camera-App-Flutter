@@ -63,6 +63,7 @@ class _CameraScreenState extends State<CameraScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      // ===== Appbar =====
       appBar: AppBar(
         toolbarHeight: 70,
         title: const Text(
@@ -80,6 +81,8 @@ class _CameraScreenState extends State<CameraScreen> {
             icon: const Icon(Icons.arrow_back_outlined)),
         backgroundColor: Colors.purple,
       ),
+
+      // ===== Body =====
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: GridView.builder(
@@ -113,6 +116,8 @@ class _CameraScreenState extends State<CameraScreen> {
                 },
                 child: Stack(
                   children: [
+
+                    // ===== Gallery Image =====
                     SizedBox(
                       width: 120,
                       child: ClipRRect(
@@ -131,6 +136,8 @@ class _CameraScreenState extends State<CameraScreen> {
                         backgroundColor: Colors.white,
                         child: IconButton(
                           onPressed: () {
+
+                            // ===== Dialog Box =====
                             showDialog(
                               context: context,
                               builder: (context) {
@@ -186,6 +193,8 @@ class _CameraScreenState extends State<CameraScreen> {
                               },
                             );
                           },
+
+                          // ===== Delete button =====
                           icon: const Icon(
                             Icons.delete,
                             color: Colors.black,
