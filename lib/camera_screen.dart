@@ -79,7 +79,7 @@ class _CameraScreenState extends State<CameraScreen> {
               initializeSelectedImage();
             },
             icon: const Icon(Icons.arrow_back_outlined)),
-        backgroundColor: Colors.purple,
+        backgroundColor: Colors.brown[400],
       ),
 
       // ===== Body =====
